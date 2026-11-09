@@ -1,2 +1,3 @@
-# Week-3-ADHD-Budgeting-App
-Week 3 – Tech Fleet AI Dev Residency: ADHD budgeting app (product specs stage; no code yet).
+# Week 3 - ADHD Budgeting App
+
+Placeholder repository for the Tech Fleet AI Development Residency Week 3 coding challenge. No application code yet.

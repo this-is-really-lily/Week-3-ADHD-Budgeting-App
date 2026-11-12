@@ -1,0 +1,12 @@
+# Secret keys and local settings (never upload)
+.env
+.env*.local
+
+# macOS folder-view files
+.DS_Store
+
+# Installed packages
+node_modules/
+
+# Next.js build output
+.next/

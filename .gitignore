@@ -10,3 +10,23 @@ node_modules/
 
 # Next.js build output
 .next/
+
+# Test coverage reports
+/coverage
+
+# Other build output
+/out/
+/build
+
+# Private certificate files
+*.pem
+
+# Package-manager error logs
+npm-debug.log*
+
+# Vercel local settings
+.vercel
+
+# TypeScript build helpers (made automatically)
+*.tsbuildinfo
+next-env.d.ts

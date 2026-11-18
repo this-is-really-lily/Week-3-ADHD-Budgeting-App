@@ -1,7 +1,7 @@
 # ADR-0002: Enter money by hand and use fake sample data, with no bank connection
 
 ## Date and status
-November 12, 2026. Proposed
+November 12, 2026. Accepted
 
 ## Context
 Our specs were written for an app that connects to a person's real bank through a

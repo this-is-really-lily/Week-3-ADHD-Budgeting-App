@@ -1,7 +1,7 @@
 # ADR-0001: Use Next.js (TypeScript) with Material UI for the app's screens
 
 ## Date and status
-November 12, 2026. Proposed
+November 12, 2026. Accepted
 
 ## Context
 We are starting to build the screens for the MVP 1 budgeting app for adults with ADHD.

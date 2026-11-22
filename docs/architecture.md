@@ -4,9 +4,9 @@ This page explains how the app is put together, in plain words. It's built from
 docs/specs and these decisions:
 - ADR-0001: Next.js + Material UI (Accepted)
 - ADR-0002: manual entry with fake sample data, no bank connection (Accepted)
-- ADR-0003: host on Vercel (Proposed)
-- ADR-0004: store data in Supabase (Proposed)
-- ADR-0005: in-app reminders for the first build (Proposed)
+- ADR-0003: host on Vercel (Accepted)
+- ADR-0004: store data in Supabase (Accepted)
+- ADR-0005: in-app reminders for the first build (Accepted)
 
 Answers to earlier open questions are marked *(Decided Nov 18, 2026)*.
 

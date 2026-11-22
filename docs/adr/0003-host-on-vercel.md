@@ -1,7 +1,7 @@
 # ADR-0003: Host the app on Vercel's free Hobby plan
 
 ## Date and status
-November 18, 2026. Proposed
+November 18, 2026. Accepted
 
 ## Context
 The app needs a home on the internet so people (and my teachers) can open it.

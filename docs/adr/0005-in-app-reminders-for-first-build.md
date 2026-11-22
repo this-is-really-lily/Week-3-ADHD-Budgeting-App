@@ -1,7 +1,7 @@
 # ADR-0005: Use in-app reminders for the first build, not email or push
 
 ## Date and status
-November 18, 2026. Proposed
+November 18, 2026. Accepted
 
 ## Context
 Several parts of our specs need the app to remind or warn people:

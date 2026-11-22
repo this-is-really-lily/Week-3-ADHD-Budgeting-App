@@ -1,7 +1,7 @@
 # ADR-0004: Store data and handle sign-in with Supabase
 
 ## Date and status
-November 18, 2026. Proposed
+November 18, 2026. Accepted
 
 ## Context
 The app needs a safe place to save each person's money setup, transactions,

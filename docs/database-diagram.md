@@ -2,6 +2,9 @@
 
 How the tables connect. Details for every column are in docs/database-design.md.
 
+Money is saved in US cents as whole numbers (`bigint`): $12.50 is 1250.
+Money columns end in `_cents`.
+
 ```mermaid
 erDiagram
     PEOPLE ||--o| MONEY_SETUP : "has at most one"
@@ -19,16 +22,19 @@ erDiagram
     MONEY_SETUP {
         uuid id PK
         uuid user_id FK
-        numeric balance_today
+        bigint balance_today_cents
         date balance_as_of
         date next_payday
         text pay_frequency
-        numeric savings_per_period
+        bigint savings_per_period_cents
         boolean is_sample
     }
     SETTINGS {
         uuid id PK
         uuid user_id FK
+        text time_zone
+        text safe_to_spend_view
+        timestamptz privacy_seen_at
         boolean show_bills
         boolean show_trials_and_renewals
         boolean show_wishlist
@@ -41,7 +47,7 @@ erDiagram
         uuid id PK
         uuid user_id FK
         date happened_on
-        numeric amount
+        bigint amount_cents
         text description
         text category
         text direction
@@ -57,10 +63,11 @@ erDiagram
         uuid id PK
         uuid user_id FK
         text name
-        numeric amount
+        bigint amount_cents
         date due_on
         text repeats
         boolean is_confirmed
+        boolean is_added_by_hand
         boolean is_paid
         date snoozed_until
         boolean is_dismissed
@@ -70,11 +77,12 @@ erDiagram
         uuid id PK
         uuid user_id FK
         text name
-        numeric amount
+        bigint amount_cents
         text charges_every
         date next_charge_on
         date trial_ends_on
         text cancel_note
+        boolean is_added_by_hand
         boolean is_dismissed
         boolean is_sample
     }
@@ -82,7 +90,7 @@ erDiagram
         uuid id PK
         uuid user_id FK
         text name
-        numeric price
+        bigint price_cents
         integer waiting_days
         date added_on
         boolean is_decided
